@@ -1,0 +1,33 @@
+ID,Title,Steps,Expected result,
+tc_01,Login with valid credentials,"1.Open login page
+2.Enter username: standard_user
+3.Enter password: secret_sauce
+4. Click ""Login""","User is successfully logged in
+- User is redirected to the Products page
+- Products list is displayed",
+tc_02,Login with invalid credentials,"1.Open login page
+2. Enter username: standard_user
+3. Enter invalid password
+4. Click ""Login""",error message is shown,
+tc_03,Login with empty field,"1.Open login page
+2.Leave username empty
+3.Leave password empty
+4.Click ""Login""",error message is shown,
+tc_04,Add products to cart,"1.Open login page
+2.Login with valid credentials (standard_user / secret_sauce)
+3.Navigate to Products page
+4. Click ""Add to cart"" button for a product (e.g. Sauce Labs Backpack)","Cart icon badge shows ""1""",
+tc_05,Remove products,"1.Login
+2.Add item to cart
+3.Click “Remove”",Item is removed,
+tc_06,Continue shopping,"1.Open cart
+2.Click “Continue Shopping”",redirect to product page,
+tc_07,Successfull checkout,"1.Add product to cart
+2.Open cart
+3.Click Checkout
+4.Enter valid info
+5.Click Continue
+6.Click Finish","Order is completed
+Confirmation message is shown",
+tc_08,Empty checkout form,"1.Open checkout
+2.Click Cancel",User return to cart,

@@ -1,0 +1,11 @@
+ID,Title,Priority,Steps,Expected result,Actual result
+BUG_01,Checkout without products,High,"1.Open SauceDemo
+2.Login with valid credentials (standard_user / secret_sauce)
+3.Navigate to Cart page
+4.Click “Checkout” button","User should NOT be able to proceed to checkout
+System should display a message like:
+“Your cart is empty”",User is allowed to proceed checkout without products in cart
+BUG_02,Quantity modification behavior,High,"Login to SauceDemo
+Add any product to cart
+Open Cart page
+click on product quantity ",User shoul be able to decrease or increase quantity,No option to modify quantity is available
